@@ -1,0 +1,16 @@
+
+
+#pvclaim.yml
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-disk-claim
+spec:
+  resources:
+    requests:
+      storage: 10Gi
+  accessModes:
+   - ReadWriteOnce
+  storageClassName: slow
+
